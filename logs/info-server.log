@@ -1,0 +1,26 @@
+time="2020-12-26T18:23:42-05:00" level=info msg="(4132708) 2020/12/26 18:23:42.502308 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.27.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:23:53-05:00" level=info msg="(4132823) 2020/12/26 18:23:53.598417 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.27.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:23:59-05:00" level=info msg="(4132918) 2020/12/26 18:23:59.067643 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.27.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:23:59-05:00" level=info msg="starting http server" address=":47500"
+time="2020-12-26T18:24:00-05:00" level=info msg="interrupt signal received, starting server shutdown" sig=interrupt
+time="2020-12-26T18:24:00-05:00" level=info msg="attempting to shutdown server gracefully"
+time="2020-12-26T18:24:01-05:00" level=info msg="server gracefully shutdown successfully"
+time="2020-12-26T18:24:20-05:00" level=info msg="(4133055) 2020/12/26 18:24:20.082469 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.27.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:24:20-05:00" level=info msg="starting http server" address=":47500"
+time="2020-12-26T18:25:03-05:00" level=info msg="interrupt signal received, starting server shutdown" sig=interrupt
+time="2020-12-26T18:25:03-05:00" level=info msg="attempting to shutdown server gracefully"
+time="2020-12-26T18:25:04-05:00" level=info msg="server gracefully shutdown successfully"
+time="2020-12-26T18:33:19-05:00" level=info msg="(4145871) 2020/12/26 18:33:19.709522 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:33:43-05:00" level=info msg="(4146013) 2020/12/26 18:33:43.245076 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:34:30-05:00" level=info msg="(4148018) 2020/12/26 18:34:30.366343 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:35:12-05:00" level=info msg="(4152019) 2020/12/26 18:35:12.771401 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:35:46-05:00" level=info msg="(4152169) 2020/12/26 18:35:46.270392 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:41:30-05:00" level=info msg="(4153839) 2020/12/26 18:41:30.302729 {\"level\":\"info\",\"msg\":\"application created\",\"context\":{\"app\":\"ember-support\",\"enabled\":false,\"grpc-version\":\"1.31.0\",\"version\":\"3.9.0\"}}"
+time="2020-12-26T18:41:30-05:00" level=info msg="starting http server" address=":47500"
+time="2020-12-26T18:43:48-05:00" level=info msg="interrupt signal received, starting server shutdown" sig=interrupt
+time="2020-12-26T18:43:48-05:00" level=info msg="attempting to shutdown server gracefully"
+time="2020-12-26T18:43:48-05:00" level=info msg="server gracefully shutdown successfully"
+time="2020-12-26T18:43:49-05:00" level=info msg="starting http server" address=":47500"
+time="2020-12-26T18:44:55-05:00" level=info msg="interrupt signal received, starting server shutdown" sig=interrupt
+time="2020-12-26T18:44:55-05:00" level=info msg="attempting to shutdown server gracefully"
+time="2020-12-26T18:44:56-05:00" level=info msg="server gracefully shutdown successfully"

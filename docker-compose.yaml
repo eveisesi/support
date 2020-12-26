@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+    db:
+        image: mongo:4.4.2
+        restart: always
+        volumes:
+            - ./docker_data/mongo:/data/db:rw
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: ${DOCKER_MONGO_INITDB_ROOT_USERNAME}
+            MONGO_INITDB_ROOT_PASSWORD: ${DOCKER_MONGO_INITDB_ROOT_PASSWORD}
+        ports:
+            - "27018:27017"
+        command: mongod --auth
+    redis:
+        image: redis:6
+        restart: always
+        ports:
+            - "6379:6379"
+        volumes:
+            - ./docker_data/redis:/data

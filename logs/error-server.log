@@ -1,0 +1,7 @@
+time="2020-12-26T18:23:42-05:00" level=fatal msg="failed to ping redis server" error="dial tcp 127.0.0.1:6879: connect: connection refused"
+time="2020-12-26T18:23:53-05:00" level=fatal msg="failed to ping redis server" error="dial tcp 127.0.0.1:6879: connect: connection refused"
+time="2020-12-26T18:33:19-05:00" level=fatal msg="failed to make mongo db connection" error="failed to connect to mongo, sleep and continue"
+time="2020-12-26T18:33:43-05:00" level=fatal msg="failed to make mongo db connection" error="failed to connect to mongo, sleep and continue"
+time="2020-12-26T18:34:30-05:00" level=fatal msg="failed to make mongo db connection" error="failed to connect to mongo, sleep and continue"
+time="2020-12-26T18:35:12-05:00" level=fatal msg="failed to make mongo db connection" error="failed to connect to mongo, sleep and continue"
+time="2020-12-26T18:35:46-05:00" level=fatal msg="failed to make mongo db connection" error="failed to connect to mongo, sleep and continue"
