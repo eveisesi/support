@@ -77,7 +77,7 @@ func loadLogger(cfg config, command string) (*logrus.Logger, error) {
 
 	logger.AddHook(&writerHook{
 		Writer: &lumberjack.Logger{
-			Filename: fmt.Sprintf("logs/error-%s.log", command),
+			Filename: fmt.Sprintf("_data/logs/error-%s.log", command),
 			MaxSize:  10,
 			Compress: false,
 		},
@@ -91,7 +91,7 @@ func loadLogger(cfg config, command string) (*logrus.Logger, error) {
 
 	logger.AddHook(&writerHook{
 		Writer: &lumberjack.Logger{
-			Filename:   fmt.Sprintf("logs/info-%s.log", command),
+			Filename:   fmt.Sprintf("_data/logs/info-%s.log", command),
 			MaxBackups: 3,
 			MaxSize:    10,
 			Compress:   false,
@@ -107,9 +107,13 @@ func loadLogger(cfg config, command string) (*logrus.Logger, error) {
 	}
 
 	logger.SetLevel(level)
-	logger.SetFormatter(&logrus.TextFormatter{
-		FullTimestamp: true,
-	})
+	logger.SetFormatter(&logrus.TextFormatter{})
+
+	// jf := &logrus.JSONFormatter{}
+	// if cfg.Env != production {
+	// 	jf.PrettyPrint = true
+	// }
+	// logger.SetFormatter(jf)
 
 	// if cfg.Env == "production" {
 	// 	// logrus.SetFormatter(nrlogrusplugin.ContextFormatter{})
@@ -167,10 +171,6 @@ func makeMongoDB(cfg config) (*mongod.Database, error) {
 		User:     url.UserPassword(cfg.Mongo.User, cfg.Mongo.Pass),
 		Path:     fmt.Sprintf("/%s", cfg.Mongo.Name),
 		RawQuery: q.Encode(),
-	}
-
-	if cfg.Env == development {
-		fmt.Println(c.String())
 	}
 
 	mc, err := mongo.Connect(context.TODO(), c)

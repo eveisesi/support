@@ -5,7 +5,7 @@ services:
         image: mongo:4.4.2
         restart: always
         volumes:
-            - ./docker_data/mongo:/data/db:rw
+            - ./_data/mongo:/data/db:rw
         environment:
             MONGO_INITDB_ROOT_USERNAME: ${DOCKER_MONGO_INITDB_ROOT_USERNAME}
             MONGO_INITDB_ROOT_PASSWORD: ${DOCKER_MONGO_INITDB_ROOT_PASSWORD}
@@ -18,4 +18,4 @@ services:
         ports:
             - "6379:6379"
         volumes:
-            - ./docker_data/redis:/data
+            - ./_data/redis:/data

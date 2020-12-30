@@ -1,28 +1,41 @@
 package main
 
-// type repositories struct {
-// 	// alliance zrule.AllianceRepository
-// 	// character     zrule.CharacterRepository
-// 	// corporation   zrule.CorporationRepository
-// 	// faction       zrule.FactionRepository
-// 	// region        zrule.RegionRepository
-// 	// constellation zrule.ConstellationRepository
-// 	// system        zrule.SolarSystemRepository
-// 	// item          zrule.ItemRepository
-// 	// itemGroup     zrule.ItemGroupRepository
-// }
+import (
+	"github.com/embersyndicate/support"
+	"github.com/embersyndicate/support/internal/mongo"
+)
 
-// func initializeRepositories(basics *app) repositories {
+type repositories struct {
+	category support.CategoryRepository
+	ticket   support.TicketRepository
+	user     support.UserRepository
+}
 
-// 	repos := repositories{}
+func initializeRepositories(basics *app) repositories {
 
-// 	// repos.alliance, err = mdb.NewAllianceRepository(basics.db)
-// 	// if err != nil {
-// 	// 	basics.logger.WithError(err).Fatal("failed to initialize allianceRepo")
-// 	// }
+	repos := repositories{}
 
-// 	// basics.logger.Info("allianceRepo initialized")
+	repos.category, err = mongo.NewCategoryRepository(basics.db)
+	if err != nil {
+		basics.logger.WithError(err).Fatal("failed to initialize category repository")
+	}
 
-// 	return repos
+	basics.logger.Info("category repository initialized")
 
-// }
+	repos.ticket, err = mongo.NewTicketRepository(basics.db)
+	if err != nil {
+		basics.logger.WithError(err).Fatal("failed to initialize ticket repository")
+	}
+
+	basics.logger.Info("ticket repository initialized")
+
+	repos.user, err = mongo.NewUserRepository(basics.db)
+	if err != nil {
+		basics.logger.WithError(err).Fatal("failed to initialize user repository")
+	}
+
+	basics.logger.Info("user repository initialized")
+
+	return repos
+
+}

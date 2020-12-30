@@ -32,11 +32,8 @@ func main() {
 	app.Name = "Ember Support"
 	app.UsageText = "ember-support"
 	app.Commands = []*cli.Command{
-		&cli.Command{
-			Name:   "server",
-			Usage:  "Initializes the http server that handle http requests to this application",
-			Action: serverCommand,
-		},
+		serverCommand(),
+		testCommand(),
 	}
 
 	err = app.Run(os.Args)
